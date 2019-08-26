@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.split {
+  height: 100vh;
+  width: 50%;
+  top: 0;
+  position: fixed;
+}
+.left {
+  left: 0;
+  background-color: #282c34;
+}
+.right {
+  right: 0;
+  background-color: #fff;
+}
+.list {
+  list-style-type: none;
+  text-align: left;
+  padding: 1px;
+  margin: 16px 0;
+  cursor: pointer;
+  border: 1px solid #ffffff9c;
+  border-radius: 0 40px 40px 0;
+  color: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.clearfix {
+  clear: both;
+}
+.split.left ul {
+  margin: 30px auto;
+  width: 50%;
+  height: 80vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-right: 10px;
+  transition: margin 1s;
+}
+.search-box {
+  border: 1px solid #d8dada;
+  width: 100%;
+  margin: 16px auto;
+  padding: 10px 10px;
+  height: 70px;
+  font-size: 32px;
+  margin-top: 0;
+  letter-spacing: 3px;
+  color: gray;
+}
+.list img {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  float: right;
+}
+.list span {
+  display: block;
+  float: left;
+  padding-left: 25px;
+  line-height: 74px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #282c34;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #282c34;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 1px solid #282c34;
+}
+.split.right img,
+svg {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 50%;
+  transition: all 0.5s;
+}
+.split.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-records {
+  height: 100vh;
+  color: #ffffffc4;
+  font-size: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li:hover {
+  background: #fff;
+  color: #000;
+}
